@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"><title>PVT & SART</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="main"><form class="card" id="f"><h2 style="margin:0">โปรแกรมทดสอบ PVT & SART</h2>
+<label>รหัสผู้เข้าร่วม<input name="id" value="ID_7421"></label>
+<label>Session<input name="session" value="3 (Day 1)"></label>
+<label>Seed (เว้นว่าง = สุ่ม)<input name="seed" placeholder="82941"></label>
+<label>PVT: จำนวน trial<input name="trials" value="60"></label>
+<label>PVT: KSS ทุก (นาที)<input name="kss" value="4"></label>
+<label>SART: จำนวนรอบ<input name="sart_trials" value="225"></label>
+<label>SART: จำนวนครั้งที่ถามสมาธิ (probe)<input name="probes" value="5"></label>
+<button class="btn" formaction="pvt.html">เริ่ม PVT</button><button class="btn" formaction="sart.html">เริ่ม SART</button>
+<a class="btn" href="tests.html">Unit tests</a>
+<a class="btn" href="validation.html">รายงานตรวจสอบ (Chi-square / Timing)</a></form></div>
+<script>f.addEventListener('submit',()=>{for(const i of f.querySelectorAll('input'))if(!i.value)i.disabled=true})</script></body></html>
